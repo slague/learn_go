@@ -34,7 +34,9 @@ var isItTrue = true
 
 func exercise3() {
 	s := fmt.Sprintf("%v %v %v", num, name, isItTrue)
+	s2 := fmt.Sprintf("%v\t%v\t%v", num, name, isItTrue) // with \n
 	fmt.Println(s)
+	fmt.Println(s2)
 }
 
 // EX 4
@@ -42,18 +44,17 @@ func exercise3() {
 func exercise4() {
 	type pizza int
 	var p pizza
+	fmt.Println(p)
 	fmt.Printf(`Value of "p" is: %v Type of "p" is: %T`, p, p)
 	fmt.Println()
-
 }
 
 // EX 5
 
-var y int
-
 type hotdog int
 
 var h hotdog
+var y int
 
 func exercise5() {
 	fmt.Printf(`Value of "y" is: %v Type of "y" is: %T`, y, y)
